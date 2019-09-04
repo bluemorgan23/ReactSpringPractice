@@ -4,17 +4,17 @@ import { useSpring, animated } from 'react-spring';
 import { config } from 'react-spring/renderprops'
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
-const trans1 = (x, y) => `translate3d(${x / 12}px,${y / 12}px,0)`;
-const trans2 = (x, y) => `translate3d(${x / 8 + 155}px,${y / 8 - 230}px,0)`;
-const trans3 = (x, y) => `translate3d(${x / 4 + 100}px,${y / 4 - 100}px,0)`;
-const trans4 = (x, y) => `translate3d(${x / 10}px,${y / 10 + 90}px,0)`;
-const trans5 = (x, y) => `translate3d(${x / 4 - 100}px,${y / 4 - 60}px,0)`;
+const trans1 = (x, y) => `translate3d(${x / 20}px,${y / 20}px,0)`;
+const trans2 = (x, y) => `translate3d(${x / 16 }px,${y / 16 }px,0)`;
+const trans3 = (x, y) => `translate3d(${x / 5 }px,${y / 5  }px,0)`;
+const trans4 = (x, y) => `translate3d(${x / 16}px,${y / 16 }px,0)`;
+const trans5 = (x, y) => `translate3d(${x / 8 - 100}px,${y / 8 - 60}px,0)`;
 
 
 
 function LandingAnimation() {
 
-  const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }));
+  const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 100, tension: 550, friction: 250 } }));
 
   const style = useSpring({opacity: 0.8, delay: 2000, config: config.molasses, from:{ opacity: 0}});
 
@@ -27,11 +27,11 @@ function LandingAnimation() {
         <animated.div className="card3" style={{ transform: props.xy.interpolate(trans3) }} />
         <animated.div className="card4" style={{ transform: props.xy.interpolate(trans4) }} />
         <animated.div className="card5" style={{ transform: props.xy.interpolate(trans5) }} />
-        <animated.span config={config.slow} className="greetings" style={style}>
+        {/* <animated.span config={config.slow} className="greetings" style={style}>
     
           Click to enter!
        
-      </animated.span>
+      </animated.span> */}
       </div>
     </React.Fragment>
 

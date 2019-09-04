@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router} from "react-router-dom"
 import './index.css';
 import App from './Components/App';
+import Nav from './Components/Nav'
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
     <Router>
+        <Nav />
         <App />
     </Router>    
     , document.getElementById('root'));

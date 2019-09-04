@@ -76,39 +76,54 @@ body {
 }
 
 .card1 {
-  min-width: 40ch;
-  min-height: 40ch;
+  min-width: 35ch;
+  min-height: 35ch;
   width: 45vw;
   height: 45vw;
-  max-width: 50ch;
-  max-height: 50ch;
+  max-width: 50vw;
+  max-height: 50vw;
   background-image: url(./images/forest.svg)
 }
 
 .card2 {
-  width: 25ch;
-  height: 25ch;
+  min-width: 15ch;
+  min-height: 15ch;
+  max-width: 20ch;
+  max-height: 20ch;
   background-image: url(./images/sunny.svg);
+  bottom: 60%;
+  right: 30%
 }
 
 .card3 {
   opacity: 1;
-  width: 7ch;
-  height: 7ch;
+  min-width: 4ch;
+  min-height: 4ch;
+  max-width: 7ch;
+  max-height: 7ch;
   background-image: url(./images/bird.svg);
+  top: 35%;
+  left: 50%;
 }
 
 .card4 {
   opacity: 1;
-  width: 15ch;
-  height: 15ch;
+  min-height: 11ch;
+  min-width: 11ch;
+  max-width: 40vw;
+  max-height: 40vw;
+  /* width: 15ch;
+  height: 15ch; */
   background-image: url(./images/tyrannosaurus-rex.svg);
+  top: 55%;
 }
 
 .card5 {
   opacity: 1;
-  width: 7ch;
-  height: 7ch;
+  min-width: 4ch;
+  min-height: 4ch;
+  max-width: 7ch;
+  max-height: 7ch;
   background-image: url(./images/bird2.svg);
 }
 
@@ -130,11 +145,31 @@ body {
   color: black;
 }
 
-.mainContainer {
+.switchContainer {
   width: 100%;
   height: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
 }
+
+/* .navBar {
+  display: flex;
+  flex-flow: row nowrap !important;
+  width: 100%;
+  justify-content: space-around !important;
+  position: absolute
+}
+
+.navList {
+  list-style-type: none;
+  font-size: 1.1em
+} */
+
+/* .collapseList {
+    position: absolute;
+    margin-top: 12%;
+} */
+
+
 
