@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
     <Router>
-        <Nav />
+        {/* <Nav /> */}
         <App />
     </Router>    
     , document.getElementById('root'));

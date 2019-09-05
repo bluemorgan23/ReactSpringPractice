@@ -6,9 +6,9 @@ import { config } from 'react-spring/renderprops'
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
 const trans1 = (x, y) => `translate3d(${x / 20}px,${y / 20}px,0)`;
 const trans2 = (x, y) => `translate3d(${x / 16 }px,${y / 16 }px,0)`;
-const trans3 = (x, y) => `translate3d(${x / 5 }px,${y / 5  }px,0)`;
+const trans3 = (x, y) => `translate3d(${x / 2 + 10 }px,${y / 2 - 10 }px,0)`;
 const trans4 = (x, y) => `translate3d(${x / 16}px,${y / 16 }px,0)`;
-const trans5 = (x, y) => `translate3d(${x / 8 - 100}px,${y / 8 - 60}px,0)`;
+const trans5 = (x, y) => `translate3d(${x / 4 - 100}px,${y / 4 - 60}px,0)`;
 
 
 
